@@ -3,6 +3,8 @@ import * as express from 'express'
 import * as logger from 'morgan'
 import * as bodyParser from 'body-parser'
 
+import HeroRouter from './routes/HeroRouter'
+
 // Creates and configures an ExpressJS web server.
 
 class App {
@@ -40,7 +42,8 @@ class App {
                 message: 'RESTFul API with Typescript and Node.js'
             })
         })
-        this.express.use('/', router)
+        this.express.use('/', router);
+        this.express.use('/api/v1/heroes', HeroRouter)
     }
 }
 

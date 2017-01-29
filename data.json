@@ -1,4 +1,4 @@
- {
+ [{
     "id": 1,
     "name": "Luke Cage",
     "aliases": ["Carl Lucas", "Power Man", "Mr. Bulletproof", "Hero for Hire"],
@@ -122,3 +122,4 @@
       "bone claws"
     ]
   }
+]
