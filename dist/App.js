@@ -24,7 +24,7 @@ class App {
         let router = express.Router();
         router.get('/', (req, res, next) => {
             res.json({
-                message: 'Hello World'
+                message: 'RESTFul API with Typescript and Node.js'
             });
         });
         this.express.use('/', router);
